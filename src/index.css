@@ -5,15 +5,15 @@
   --primary-color: #38bdf8;
   /* Bright Sky Blue */
   --primary-light: #7dd3fc;
-  --secondary-color: #f8fafc;
+  --secondary-color: #f0f4ff;
   /* Keep text bright */
   --bg-color: #000000;
   /* True Black */
   --surface-color: #111827;
   /* Very Dark Slate */
-  --text-main: #cbd5e1;
+  --text-main: #f0f4ff;
   /* Light Slate */
-  --text-light: #94a3b8;
+  --text-light: #a0a8c8;
   --accent-color: #fbbf24;
   /* Amber/Gold */
 
