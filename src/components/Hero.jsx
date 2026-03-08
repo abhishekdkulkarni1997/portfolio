@@ -30,20 +30,27 @@ const Hero = ({ data }) => {
                         </div>
 
                         <h1 className="hero-title">
-                            <TypeAnimation
-                                sequence={[
-                                    `Hi, I'm ${personalInfo.name}`,
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                cursor={true}
-                                repeat={0}
-                                className="highlight"
-                            />
+                            Hi, I'm <span className="highlight">{personalInfo.name}</span>
                         </h1>
 
                         <h2 className="hero-subtitle">
-                            {personalInfo.title}
+                            And I'm a{' '}
+                            <TypeAnimation
+                                sequence={[
+                                    'Physiotherapist',
+                                    2000,
+                                    'Sports Rehabilitation Specialist',
+                                    2000,
+                                    'KSCA U-23 Team Physio',
+                                    2000,
+                                    'Performance Optimizer',
+                                    2000,
+                                ]}
+                                wrapper="span"
+                                cursor={true}
+                                repeat={Infinity}
+                                style={{ color: 'var(--primary-light)' }}
+                            />
                         </h2>
 
                         <p className="hero-description">
