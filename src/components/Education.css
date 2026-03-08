@@ -1,5 +1,6 @@
 .education-section {
     background-color: var(--bg-color);
+    position: relative;
 }
 
 .education-grid {
@@ -23,10 +24,13 @@
 .sub-title::after {
     left: 0;
     transform: none;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
 }
 
 .title-icon {
     color: var(--primary-color);
+    filter: drop-shadow(0 0 5px var(--primary-color));
 }
 
 .cards-container {
@@ -41,7 +45,7 @@
     border-radius: 16px;
     padding: 2rem;
     box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
     overflow: hidden;
     transition: var(--transition);
@@ -49,23 +53,23 @@
 }
 
 .edu-card:hover {
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
     transform: translateY(-5px);
-    border-color: rgba(15, 118, 110, 0.2);
+    border-color: rgba(56, 189, 248, 0.3);
 }
 
 .card-bg-icon {
     position: absolute;
     right: -20px;
     bottom: -20px;
-    color: rgba(15, 118, 110, 0.03);
+    color: rgba(255, 255, 255, 0.02);
     z-index: -1;
     transform: rotate(-15deg);
     transition: var(--transition);
 }
 
 .edu-card:hover .card-bg-icon {
-    color: rgba(15, 118, 110, 0.08);
+    color: rgba(56, 189, 248, 0.05);
     transform: rotate(0deg) scale(1.1);
 }
 
@@ -80,6 +84,7 @@
     font-weight: 500;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
 }
 
 .edu-meta {
@@ -95,40 +100,41 @@
     gap: 0.4rem;
     font-size: 0.85rem;
     color: var(--text-light);
-    background: var(--bg-color);
+    background: rgba(255, 255, 255, 0.05);
     padding: 0.3rem 0.8rem;
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .highlight-tag {
-    color: var(--primary-color);
-    background: rgba(15, 118, 110, 0.1);
-    border-color: rgba(15, 118, 110, 0.2);
-    font-weight: 600;
+    color: #000;
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
 }
 
 .edu-details {
     font-size: 0.95rem;
     color: var(--text-main);
     line-height: 1.6;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 1.5rem;
 }
 
 /* Project Cards */
 .proj-card {
-    background: linear-gradient(145deg, var(--surface-color), var(--bg-color));
+    background: linear-gradient(145deg, var(--surface-color), rgba(0, 0, 0, 0.5));
     border-radius: 16px;
     padding: 2rem;
     box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: var(--transition);
     border-left: 4px solid var(--primary-light);
 }
 
 .proj-card:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
     transform: translateX(5px);
     border-left-color: var(--primary-color);
 }
@@ -148,13 +154,14 @@
 }
 
 .proj-duration {
-    background: var(--secondary-color);
-    color: white;
+    background: var(--primary-light);
+    color: #000;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0.3rem 0.8rem;
     border-radius: 50px;
     white-space: nowrap;
+    box-shadow: 0 0 10px rgba(125, 211, 252, 0.4);
 }
 
 .proj-details {
