@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #0f766e; /* Deep Teal */
-  --primary-light: #14b8a6;
-  --secondary-color: #1e293b; /* Slate */
-  --bg-color: #f8fafc;
-  --text-main: #334155;
-  --text-light: #64748b;
+  /* Modern Premium Theme */
+  --primary-color: #6366f1;
+  /* Indigo */
+  --primary-light: #818cf8;
+  --secondary-color: #111827;
+  /* Dark Slate */
+  --bg-color: #fafaf9;
+  /* Warm White */
+  --text-main: #374151;
+  --text-light: #6b7280;
   --surface-color: #ffffff;
-  --accent-color: #f59e0b; /* Amber for highlights */
-  
-  --transition: all 0.3s ease;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --accent-color: #f43f5e;
+  /* Rose / Coral */
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 * {
@@ -50,7 +55,12 @@ ul {
   padding: 0 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--secondary-color);
   font-weight: 700;
   line-height: 1.2;
