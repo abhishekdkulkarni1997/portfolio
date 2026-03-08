@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import './Navbar.css';
 
-const Navbar = ({ data }) => {
+const Navbar = ({ data, onOpenResume }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,7 +41,7 @@ const Navbar = ({ data }) => {
                     <a href="#experience">Experience</a>
                     <a href="#education">Education</a>
                     <a href="#skills">Skills</a>
-                    <a href="#resume">Resume</a>
+                    <a href="#resume" onClick={(e) => { e.preventDefault(); onOpenResume(); }}>Resume</a>
                     <a href="#contact">Contact</a>
                 </div>
                 {/* Mobile Menu Toggle */}
@@ -63,7 +63,7 @@ const Navbar = ({ data }) => {
                         <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
                         <li><a href="#education" onClick={() => setIsMenuOpen(false)}>Education</a></li>
                         <li><a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
-                        <li><a href="#resume" onClick={() => setIsMenuOpen(false)}>Resume</a></li>
+                        <li><a href="#resume" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); onOpenResume(); }}>Resume</a></li>
                         <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
                     </ul>
                 </motion.div>
