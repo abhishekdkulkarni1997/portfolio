@@ -15,10 +15,12 @@ const Hero = ({ data }) => {
             </div>
 
             <div className="container hero-container">
-                <div className="hero-content">
+                <div className="hero-content-wrapper">
+                    {/* Left side: Text Content */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        className="hero-text-content"
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                     >
                         <div className="hero-badge">
@@ -54,6 +56,24 @@ const Hero = ({ data }) => {
                             <a href="#experience" className="btn btn-secondary">
                                 View Experience
                             </a>
+                        </div>
+                    </motion.div>
+
+                    {/* Right side: Image Content */}
+                    <motion.div
+                        className="hero-image-wrapper"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                    >
+                        <div className="hero-image-container">
+                            <div className="image-glow"></div>
+                            {/* You can replace the src below with a real profile image of Abhishek */}
+                            <img
+                                src="https://ui-avatars.com/api/?name=Abhishek+Kulkarni&size=512&background=random"
+                                alt="Abhishek Kulkarni"
+                                className="hero-profile-img"
+                            />
                         </div>
                     </motion.div>
                 </div>
