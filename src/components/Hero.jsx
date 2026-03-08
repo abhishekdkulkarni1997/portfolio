@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Activity, ArrowRight } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 import './Hero.css';
 
 const Hero = ({ data }) => {
@@ -26,7 +27,16 @@ const Hero = ({ data }) => {
                         </div>
 
                         <h1 className="hero-title">
-                            Hi, I'm <span className="highlight">{personalInfo.name}</span>
+                            <TypeAnimation
+                                sequence={[
+                                    `Hi, I'm ${personalInfo.name}`,
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                cursor={true}
+                                repeat={0}
+                                className="highlight"
+                            />
                         </h1>
 
                         <h2 className="hero-subtitle">
