@@ -1,0 +1,186 @@
+.bg-light {
+    background-color: var(--surface-color);
+}
+
+.experience-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: var(--surface-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+.current-role {
+    margin-bottom: 4rem;
+    background: linear-gradient(to right, rgba(15, 118, 110, 0.05), rgba(20, 184, 166, 0.05));
+    border: 1px solid rgba(15, 118, 110, 0.2);
+}
+
+.current-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: -2rem;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 0.3rem 2.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.role-icon-wrapper {
+    background: rgba(15, 118, 110, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-icon-wrapper.current {
+    background: var(--primary-color);
+}
+
+.role-header-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.role-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card-body h4 {
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0.8rem;
+    color: var(--secondary-color);
+}
+
+.org-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.org-list li {
+    background: var(--bg-color);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.resp-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.resp-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    color: var(--text-main);
+}
+
+.check-icon {
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+/* Timeline specific styles */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: rgba(15, 118, 110, 0.2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.35rem;
+    top: 1.5rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 4px solid var(--surface-color);
+    box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.2);
+}
+
+@media (max-width: 768px) {
+    .resp-list {
+        grid-template-columns: 1fr;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .role-header-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timeline-dot {
+        left: -1.35rem;
+    }
+}

@@ -1,0 +1,133 @@
+.skills-section {
+    background-color: var(--surface-color);
+    position: relative;
+}
+
+.skills-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(15, 118, 110, 0.2), transparent);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.block-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+    justify-content: center;
+}
+
+.block-icon {
+    color: var(--accent-color);
+}
+
+.cert-block .block-icon {
+    color: var(--primary-color);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.skill-pill {
+    background: white;
+    border: 2px solid var(--primary-light);
+    border-radius: 50px;
+    padding: 0.8rem 1.8rem;
+    box-shadow: 0 4px 10px rgba(20, 184, 166, 0.1);
+    transition: var(--transition);
+    cursor: default;
+}
+
+.skill-pill:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(15, 118, 110, 0.2);
+}
+
+.skill-pill:hover .skill-text {
+    color: white;
+}
+
+.skill-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+/* Certifications List */
+.cert-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    background: var(--bg-color);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--surface-color);
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 3px solid transparent;
+}
+
+.cert-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary-color);
+}
+
+.cert-check {
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.cert-item span {
+    font-size: 1rem;
+    color: var(--text-main);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .cert-list {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .skill-pill {
+        padding: 0.6rem 1.4rem;
+    }
+
+    .skill-text {
+        font-size: 1rem;
+    }
+}
