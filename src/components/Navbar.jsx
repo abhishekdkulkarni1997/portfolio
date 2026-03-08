@@ -36,19 +36,14 @@ const Navbar = ({ data }) => {
                 </motion.div>
 
                 {/* Desktop Nav */}
-                <ul className="nav-links desktop-nav">
-                    {navLinks.map((link, index) => (
-                        <motion.li
-                            key={link.name}
-                            initial={{ opacity: 0, y: -10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.3, delay: index * 0.1 }}
-                        >
-                            <a href={link.href}>{link.name}</a>
-                        </motion.li>
-                    ))}
-                </ul>
-
+                <div className="desktop-nav">
+                    <a href="#home">Home</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact</a>
+                </div>
                 {/* Mobile Menu Toggle */}
                 <div className="mobile-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -64,13 +59,12 @@ const Navbar = ({ data }) => {
                     transition={{ duration: 0.3 }}
                 >
                     <ul className="mobile-nav-links">
-                        {navLinks.map((link) => (
-                            <li key={link.name}>
-                                <a href={link.href} onClick={() => setIsMenuOpen(false)}>
-                                    {link.name}
-                                </a>
-                            </li>
-                        ))}
+                        <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+                        <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
+                        <li><a href="#education" onClick={() => setIsMenuOpen(false)}>Education</a></li>
+                        <li><a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
+                        <li><a href="#resume" onClick={() => setIsMenuOpen(false)}>Resume</a></li>
+                        <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
                     </ul>
                 </motion.div>
             )}

@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import ResumeViewer from './components/ResumeViewer';
 import Contact from './components/Contact';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Education education={resumeData.education} projects={resumeData.projects} />
         <Skills skills={resumeData.skills} certifications={resumeData.certifications} />
       </main>
+      <ResumeViewer />
       <Contact data={resumeData.personalInfo} />
     </div>
   );
