@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Activity, ArrowRight } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
+import heroImage from '../assets/hero-image.png';
 import './Hero.css';
 
 const Hero = ({ data }) => {
@@ -68,11 +69,10 @@ const Hero = ({ data }) => {
                     >
                         <div className="hero-image-container">
                             <div className="image-glow"></div>
-                            {/* You can replace the src below with a real profile image of Abhishek */}
                             <img
-                                src="https://ui-avatars.com/api/?name=Abhishek+Kulkarni&size=512&background=random"
-                                alt="Abhishek Kulkarni"
-                                className="hero-profile-img"
+                                src={heroImage}
+                                alt="Futuristic Physiotherapy"
+                                className="hero-profile-img floating-interactive"
                             />
                         </div>
                     </motion.div>

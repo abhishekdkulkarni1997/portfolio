@@ -219,13 +219,32 @@
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
     position: relative;
     z-index: 2;
-    transition: var(--transition);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-interactive {
+    animation: gentleFloat 6s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .hero-image-container:hover .hero-profile-img {
     border-color: var(--primary-color);
-    box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
-    transform: scale(1.02);
+    box-shadow: 0 0 50px rgba(56, 189, 248, 0.5);
+    transform: scale(1.05) translateY(-5px);
+    animation-play-state: paused;
 }
 
 @media (max-width: 992px) {
