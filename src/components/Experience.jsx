@@ -82,15 +82,19 @@ const Experience = ({ data, currentRole }) => {
                                             ))}
                                         </ul>
 
-                                        <h4 className="resp-title">Key Responsibilities:</h4>
-                                        <ul className="resp-list">
-                                            {exp.responsibilities?.map((resp, idx) => (
-                                                <li key={idx}>
-                                                    <CheckCircle size={16} className="check-icon" />
-                                                    <span>{resp}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        {exp.responsibilities && exp.responsibilities.length > 0 && (
+                                            <>
+                                                <h4 className="resp-title">Key Responsibilities:</h4>
+                                                <ul className="resp-list">
+                                                    {exp.responsibilities.map((resp, idx) => (
+                                                        <li key={idx}>
+                                                            <CheckCircle size={16} className="check-icon" />
+                                                            <span>{resp}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </motion.div>
