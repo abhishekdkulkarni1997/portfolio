@@ -47,8 +47,7 @@ export const resumeData = {
         "Karnataka State Cricket Association (KSCA) - U-23 State Team"
       ],
       location: "Bangalore",
-      duration: "2024 - 2025",
-      responsibilities: []
+      duration: "2024 - 2025"
     },
     {
       title: "Physiotherapist",
