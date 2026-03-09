@@ -7,8 +7,8 @@ export const resumeData = {
     languages: ["English", "Kannada", "Hindi"]
   },
   currentRole: {
-    title: "Karnataka State Cricket Association (KSCA) - U-23 State Team Physiotherapist",
-    duration: "2024 - present"
+    title: "Karnataka State Cricket Association (KSCA) - Senior Team Physiotherapist",
+    duration: "2025 - 2026"
   },
   education: [
     {
@@ -41,6 +41,15 @@ export const resumeData = {
     }
   ],
   experience: [
+    {
+      title: "Physiotherapist",
+      organizations: [
+        "Karnataka State Cricket Association (KSCA) - U-23 State Team"
+      ],
+      location: "Bangalore",
+      duration: "2024 - 2025",
+      responsibilities: []
+    },
     {
       title: "Physiotherapist",
       organizations: [
