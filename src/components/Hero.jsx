@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Activity, ArrowRight } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
-import heroImage from '../assets/hero-image.png';
+import profilePhoto from '../assets/profile-photo.png';
 import './Hero.css';
 
 const Hero = ({ data }) => {
@@ -77,8 +77,8 @@ const Hero = ({ data }) => {
                         <div className="hero-image-container">
                             <div className="image-glow"></div>
                             <img
-                                src={heroImage}
-                                alt="Futuristic Physiotherapy"
+                                src={profilePhoto}
+                                alt="Profile Photo"
                                 className="hero-profile-img floating-interactive"
                             />
                         </div>
