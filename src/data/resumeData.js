@@ -7,7 +7,7 @@ export const resumeData = {
     languages: ["English", "Kannada", "Hindi"]
   },
   currentRole: {
-    title: "Karnataka State Cricket Association (KSCA) - Senior Team Physiotherapist",
+    title: "Karnataka State Cricket Association (KSCA)-Lead Physio-Senior Team",
     duration: "2025 - 2026"
   },
   education: [

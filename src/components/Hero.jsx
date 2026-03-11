@@ -41,7 +41,7 @@ const Hero = ({ data }) => {
                                     2000,
                                     'Sports Rehabilitation Specialist',
                                     2000,
-                                    'KSCA Senior Team Physio',
+                                    'KSCA-Lead Physio-Senior Team',
                                     2000,
                                     'Performance Optimizer',
                                     2000,
