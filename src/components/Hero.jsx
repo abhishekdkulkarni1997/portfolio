@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Activity, ArrowRight } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
-import profilePhoto from '../assets/profile-photo.png';
+import profilePhoto from '../assets/abhi.jpeg';
 import './Hero.css';
 
 const Hero = ({ data }) => {

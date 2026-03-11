@@ -52,17 +52,6 @@ const Contact = ({ data }) => {
                     <div className="contact-decor-2"></div>
                 </motion.div>
             </div>
-
-            <footer className="footer">
-                <div className="container footer-content">
-                    <p className="copyright">
-                        © {new Date().getFullYear()} {data?.name}. All rights reserved.
-                    </p>
-                    <p className="made-with">
-                        Built with <Heart size={14} className="heart-icon" /> for Sports Physiotherapy
-                    </p>
-                </div>
-            </footer>
         </section>
     );
 };

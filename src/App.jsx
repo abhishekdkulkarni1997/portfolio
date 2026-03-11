@@ -8,7 +8,10 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import ResumeViewer from './components/ResumeViewer';
+import Testimonials from './components/Testimonials';
+import TestimonialForm from './components/TestimonialForm';
 import Contact from './components/Contact';
+import { Heart } from 'lucide-react';
 
 function App() {
   const [isResumeOpen, setIsResumeOpen] = React.useState(false);
@@ -24,6 +27,19 @@ function App() {
       </main>
       <ResumeViewer isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
       <Contact data={resumeData.personalInfo} />
+      <Testimonials fallbackTestimonials={resumeData.testimonials} />
+      <TestimonialForm />
+
+      <footer className="footer" style={{ marginTop: '2rem' }}>
+        <div className="container footer-content">
+          <p className="copyright">
+            © {new Date().getFullYear()} Poornanand. All rights reserved.
+          </p>
+          <p className="made-with">
+            Built with <Heart size={14} className="heart-icon" /> for Sports Physiotherapy
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

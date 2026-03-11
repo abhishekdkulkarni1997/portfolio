@@ -79,7 +79,27 @@ export const resumeData = {
     {
       title: "Stairs Physical Therapy and Fitness Centre",
       duration: "2022",
-      details: "Dealt with neurological conditions; Pre-op, Post-op and outpatient care. Presented case studies."
+      details: "Experienced in sports rehabilitation with a proven track record of treating athletes across multiple disciplines, specializing in diverse condition management, prehab, and rehab."
+    }
+  ],
+  testimonials: [
+    {
+      name: "Rahul M.",
+      role: "Professional Cricketer",
+      content: "Abhishek is absolutely phenomenal. His sports-specific rehabilitation approach got me back on the field faster than I ever thought possible after my injury.",
+      rating: 5
+    },
+    {
+      name: "Sneha P.",
+      role: "Marathon Runner",
+      content: "I had been dealing with chronic shin splints for months. Within a few sessions of Abhishek's targeted therapy, I saw immense improvement. Highly recommended!",
+      rating: 5
+    },
+    {
+      name: "Karthik N.",
+      role: "Football Player",
+      content: "The prehabilitation routines provided by Abhishek changed the game for me. Not only did I recover from my ACL strain, but my overall performance improved significantly.",
+      rating: 5
     }
   ],
   skills: [

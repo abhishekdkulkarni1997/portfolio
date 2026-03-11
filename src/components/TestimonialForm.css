@@ -1,0 +1,147 @@
+.testimonial-form-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-light);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    padding: 3rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow);
+}
+
+.form-subtitle {
+    color: var(--text-light);
+    margin-top: -10px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.testimonial-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    text-align: left;
+}
+
+.rating-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+
+.rating-selector span {
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.stars {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.star-select {
+    color: #ffd700;
+    fill: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.star-select.filled {
+    fill: #ffd700;
+}
+
+.star-select:hover {
+    transform: scale(1.1);
+}
+
+.input-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition-fast);
+}
+
+.testimonial-form input:focus,
+.testimonial-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+.submit-review-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.submit-review-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.status-message {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.status-message.success {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.status-message.error {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+@media (max-width: 600px) {
+    .form-wrapper {
+        padding: 2rem 1.5rem;
+    }
+
+    .input-group-row {
+        grid-template-columns: 1fr;
+    }
+}

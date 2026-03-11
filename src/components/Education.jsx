@@ -86,7 +86,15 @@ const Education = ({ education, projects }) => {
                                         <h3>{proj.title}</h3>
                                         <span className="proj-duration">{proj.duration}</span>
                                     </div>
-                                    <p className="proj-details">{proj.details}</p>
+                                    {Array.isArray(proj.details) ? (
+                                        <ul className="proj-details-list" style={{ paddingLeft: '20px', margin: '10px 0', color: 'var(--text-color)' }}>
+                                            {proj.details.map((detail, idx) => (
+                                                <li key={idx} style={{ marginBottom: '8px' }}>{detail}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <p className="proj-details">{proj.details}</p>
+                                    )}
                                 </motion.div>
                             ))}
                         </motion.div>
