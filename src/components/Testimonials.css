@@ -6,10 +6,9 @@
 }
 
 .marquee-container {
-    width: 100vw;
-    max-width: 100%;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    width: calc(100vw - 10cm);
+    max-width: 100vw;
+    margin-left: calc(-50vw + 50% + 5cm);
     overflow: hidden;
     position: relative;
     padding: 2rem 0;
