@@ -29,11 +29,12 @@ const ResumeViewer = ({ isOpen, onClose }) => {
                             </div>
                             <div className="resume-actions">
                                 <a
-                                    href="/portfolio/resumeabhi.pdf"
-                                    download="Abhishek_Kulkarni_Resume.pdf"
-                                    className="btn btn-primary download-btn"
+                                    href="/portfolio/Abresume.pdf"
+                                    className="btn btn-primary"
+                                    download
                                 >
-                                    <Download size={18} /> Download
+                                    <Download size={18} />
+                                    Download Resume
                                 </a>
                                 <button className="close-btn" onClick={onClose} aria-label="Close">
                                     <X size={28} />
@@ -41,17 +42,17 @@ const ResumeViewer = ({ isOpen, onClose }) => {
                             </div>
                         </div>
 
-                        <div className="pdf-wrapper">
-                            <object
-                                data="/portfolio/resumeabhi.pdf"
-                                type="application/pdf"
-                                width="100%"
-                                height="100%"
+                        <div className="resume-body">
+                            {/* Object is the standard way to embed PDF */}
+                            <object 
+                                data="/portfolio/Abresume.pdf" 
+                                type="application/pdf" 
                                 className="pdf-viewer"
                             >
                                 <div className="pdf-fallback">
-                                    <p>It appears you don't have a PDF plugin for this browser.</p>
-                                    <a href="/portfolio/resumeabhi.pdf" className="btn btn-secondary">
+                                    <FileText size={48} className="fallback-icon" />
+                                    <p>Your browser doesn't support built-in PDF viewing.</p>
+                                    <a href="/portfolio/Abresume.pdf" className="btn btn-secondary">
                                         Click here to download the PDF file.
                                     </a>
                                 </div>
