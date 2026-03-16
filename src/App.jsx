@@ -34,7 +34,7 @@ function App() {
       <footer className="footer" style={{ marginTop: '2rem' }}>
         <div className="container footer-content">
           <p className="copyright">
-            © {new Date().getFullYear()} Poornanand. All rights reserved.
+            © {new Date().getFullYear()} <a href="https://www.linkedin.com/in/poornanandnaik24/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Poornanand</a>. All rights reserved.
           </p>
           <p className="made-with">
             Built with <Heart size={14} className="heart-icon" /> for Sports Physiotherapy
