@@ -42,11 +42,13 @@ const ResumeViewer = ({ isOpen, onClose }) => {
                             </div>
                         </div>
 
-                        <div className="resume-body">
+                        <div className="pdf-wrapper">
                             {/* Object is the standard way to embed PDF */}
                             <object 
                                 data="/portfolio/Abresume.pdf" 
                                 type="application/pdf" 
+                                width="100%"
+                                height="100%"
                                 className="pdf-viewer"
                             >
                                 <div className="pdf-fallback">
