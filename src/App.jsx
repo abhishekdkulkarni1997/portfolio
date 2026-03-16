@@ -11,6 +11,7 @@ import ResumeViewer from './components/ResumeViewer';
 import Testimonials from './components/Testimonials';
 import TestimonialForm from './components/TestimonialForm';
 import Contact from './components/Contact';
+import VisitorCounter from './components/VisitorCounter';
 import { Heart } from 'lucide-react';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <p className="made-with">
             Built with <Heart size={14} className="heart-icon" /> for Sports Physiotherapy
           </p>
+          <VisitorCounter />
         </div>
       </footer>
     </div>
