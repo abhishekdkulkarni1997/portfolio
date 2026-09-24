@@ -8,7 +8,7 @@ export const resumeData = {
   },
   currentRole: {
     title: "Karnataka State Cricket Association (KSCA)-Lead Physio-Senior Team",
-    duration: "2025 - 2026"
+    duration: "2026 - 2027"
   },
   education: [
     {
@@ -41,6 +41,14 @@ export const resumeData = {
     }
   ],
   experience: [
+    {
+      title: "Physiotherapist",
+      organizations: [
+        "Maharaja Trophy / Coastal Kings Mangaluru"
+      ],
+      location: "Bangalore",
+      duration: "2025 - 2026"
+    },
     {
       title: "Physiotherapist",
       organizations: [
